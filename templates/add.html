@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+       body {
+       background-color: lightblue;
+       }
+
+       h1,h3 {
+          color: white;
+          text-align: center;
+          }
+
+       p {
+           font-family: verdana;
+           font-size: 20px;
+         }
+  </style>
+</head>
+<body>
+<form action="add" method="post">
+
+    {% csrf_token %}
+    <h1>New page</h1>
+
+
+    <h3>
+        <input type="submit">
+    </h3>
+
+
+
+</form>
+{% for msg in messages %}
+{{ msg }}
+{% endfor %}
+</body>
+</html>

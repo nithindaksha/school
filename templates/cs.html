@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="cs" method="post">
+
+    {% csrf_token %}
+    <h1>computer science</h1>
+    <p>MMU President's Scholarship
+Awarded to high-flying and well-rounded students with outstanding academic results
+MMU Merit Scholarship
+Awarded to undergraduate students who would  consistently deliver outstanding
+results in their degree programme
+MMU Talent Scholarship
+Awarded to students who have a proven track record of excellence in their respective
+field of talent, e.g. Sports, Music, Art, Debate, Theater, and Writing
+Ibnu Haitham Scholarship & Financial Aid
+This scholarship is fully funded under the Zakat fund
+
+Sin Chew Daily Education
+This is a joint scholarship scheme between Sin Chew Daily and MMU in providing
+financial assistance to outstanding students to pursue their studies in MMU
+STAR Education Fund Scholarship
+This is a joint scholarship scheme between STAR Education Fund and MMU in providing financial assistance to outstanding students to pursue their studies in MMU
+MMU Siblings Discount
+This discount is given to new Foundation, Diploma and Bachelor’s Degree students who have a sibling enrolled in MMU or graduated from MMU
+MMU Alumni Discount
+This discount is given to MMU Diploma Alumni or his/her children pursuing studies at MMU's Bachelor's Degree Programmes
+MMU Staff Discount
+MMU Staff(Contract / Permanent) who have served a minimum of one (1) year
+ service are eligible to apply for the discount of tuition fees for themselves or their
+children studying in MMU
+TM Staff Discount
+TM Staffand its subsidiaries (Contract / Permanent) who have served a minimum of one (1) year service are eligible to apply for the discount of tuition fees for themselves or their children studying in MMU
+MMU International Student Entrance  Scholarship
+A tuition fee waiver programme for self-funded international students who enrolled into MMU Foundation Programme in 2022
+MMU Merit (International) Scholarship
+A tuition fee waiver programme for self-funded international students who excel academically afer the announcement of their first long trimester result of Bachelor’s Degree Programme in MMU
+MMU International Student Rebates
+A tuition fee waiver programme for self-funded international students who enrolled into MMU Bachelor’s Degree Programmes in 2022
+MMU Achievers Research Scholarship
+Awarded to students who complete a Bachelor’s Degree Programme, Master by Coursework or Mixed-Mode and Master by Research with selected criteria
+MMU Postgraduate Merit Scholarship
+Awarded to students who completed a Bachelor’s Degree Programme from a recognised institution with minimum CGPA of 3.33 and consistently deliver outstanding results in their programme</p>
+</form>
+{% for msg in messages %}
+{{ msg }}
+{% endfor %}
+
+</body>
+</html>

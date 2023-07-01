@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+       body {
+       background-color: lightblue;
+       }
+
+       h1,h3 {
+          color: white;
+          text-align: center;
+          }
+
+       p {
+           font-family: verdana;
+           font-size: 20px;
+         }
+  </style>
+</head>
+<body>
+<form action="form" method="post">
+
+    {% csrf_token %}
+    <h1>Form</h1>
+    <h3>
+        <label>Name</label>
+        <input type="text" name="name" placeholder="enter your name">
+    </h3>
+    <h3>
+        <label>DOB</label>
+        <input type="date" name="DOB" placeholder="enter your DOB">
+    </h3>
+    <h3>
+        <label >Age</label>
+        <input type="varchar" name="age" placeholder="enter your age">
+    </h3>
+    <h3>
+        <label >Gender</label>
+        <input type="text" name="gender" placeholder="enter your gender">
+    </h3>
+
+    <h3>
+        <label >Phone Number</label>
+        <input type="varchar" name="phone" placeholder="enter  your phone number">
+    </h3>
+    <h3>
+        <label >email</label>
+        <input type="email" name="email" placeholder="enter  your email">
+    </h3>
+    <h3>
+        <label >Address</label>
+        <input type="text" name="address" placeholder="enter your address">
+    </h3>
+    <h3>
+        <label >Department</label>
+        <input type="text" name="department" placeholder="enter your department">
+    </h3>
+
+    <h3>
+        <label >Courses</label>
+        <input type="text" name="courses" placeholder="enter your courses">
+    </h3>
+
+
+    <h3>
+        <input type="submit">
+    </h3>
+
+
+
+</form>
+
+{% for msg in messages %}
+{{ msg }} <a href="/">Home</a>
+{% endfor %}
+
+</body>
+</html>
